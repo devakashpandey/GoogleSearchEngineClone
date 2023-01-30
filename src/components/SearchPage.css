@@ -62,3 +62,31 @@
 .srch-icon{
  color: grey;
 }
+
+.search-results{
+ padding-left: 20px;
+}
+
+.result-count{
+ color: grey;
+ font-size: 15px;
+}
+
+.search-result{
+  margin: 40px 0px;
+}
+
+.search-result > a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.result-img{
+  height: 40px;
+  width: 100px;
+}
+
+.search-result > a > p{
+  margin-left: 10px;
+}

@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import "./Search.css";
 
 const Search = () => {
+
+  let [input , setInput] = useState()
+  let navigate = useNavigate()
+
+  let googleSearch = (event) =>{
+      event.preventDefault()
+      navigate("/search")
+  }
+
   return (
      <>
        <div className='search'>
@@ -11,7 +21,7 @@ const Search = () => {
             search
           </span>
 
-           <input type="text" />
+           <input type="text" value={input} onChange={(e) => setInput(e.target.value)} />
 
             <span class="material-symbols-sharp right-icon">
                 mic
@@ -24,7 +34,7 @@ const Search = () => {
           </div>
 
           <div className='search-btn'>
-                <button type="submit">Google Search</button>
+                <button onClick={googleSearch} type="submit">Google Search</button>
                 <button type="submit">I'm Feeling Lucky</button>
              </div>
           

@@ -80,23 +80,32 @@ const SearchPage = () => {
                       </div>
 
                       <div className='search-results'>
-                          <p className='result-count'>About 200 results (0.49 seconds) for hello</p>
+                          <p className='result-count'>About 3,79,00,00,000 results (0.64 seconds) </p>
                           <div className='search-result'>
                             <a href="#">
-                              <img src="" alt="pic" /> &nbsp;
-                              link.com
+                              <img className='result-img' src={googleImg} alt="pic" />
+                             <p>Link.com</p>
                             </a>
                           <a className='result-title' href="">
                                             <h3>Title</h3>
                           </a>
+                          <p className='result-description'>Description</p>
 
-                          <p className='result-description'>
-                                 Description
-                          </p>
+                               <hr/>     
 
-                          <hr/>
-                              
-                          </div>
+                               
+<p>https://www.bikedekho.com › new-bikes</p>
+< a href="#">New Bikes in India 2023 - BikeDekho </a>
+<p>BikeDekho brings complete range of new bikes in India. You can search bikes by applying filters such as by budget, by preferred price, by bodytype, ...</p>BikeDekho brings complete range of new bikes in India. You can search bikes by applying filters such as by budget, by preferred price, by bodytype, ...
+
+<hr/>   
+
+<p>https://www.bikewale.com</p>
+<a href="#">BikeWale: New Bikes, New Scooters, Electric Bikes</a>
+<p>BikeWale is one of the India's leading source of bike and scooter related information. BikeWale exists to simplify bike buying in India and helps you buy ...
+</p>
+
+                           </div>
                       </div>
              </div>
              
