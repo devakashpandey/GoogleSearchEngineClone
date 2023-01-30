@@ -16,19 +16,20 @@ const Search = () => {
             <span class="material-symbols-sharp right-icon">
                 mic
             </span>
-  
-            <span class="material-symbols-rounded right-icon">
+            
+              <span class="material-symbols-rounded right-icon">
                photo_camera
-             </span>
+             </span>            
 
           </div>
 
-             <div className='search-btn'>
+          <div className='search-btn'>
                 <button type="submit">Google Search</button>
                 <button type="submit">I'm Feeling Lucky</button>
              </div>
           
-           <div className='lang'>
+           
+          <div className='lang'>
              <p>Google offered in: &nbsp;
               <a href="#">हिन्दी &nbsp;&nbsp;</a> 
               <a href="#">বাংলা &nbsp;&nbsp;</a>
@@ -40,7 +41,7 @@ const Search = () => {
               <a href="#">ਪੰਜਾਬੀ </a>          
               </p>
            </div>
-
+          
        </div>
      </>
   )
