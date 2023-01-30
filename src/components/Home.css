@@ -1,0 +1,50 @@
+.home{
+   display: flex;
+   flex-direction: column;
+}
+
+.home-header{
+  display: flex;
+  justify-content:end;
+}
+
+.nav{
+display: flex;
+align-items: center;
+min-width: 500px;
+justify-content: space-around;
+height: 70px;
+font-size: 18px;
+}
+
+.app{
+  font-size: 25px;
+  color:grey;
+}
+
+.avtar{
+  font-size: 38px;
+  color: grey;
+}
+
+.home-body{
+ display: flex;
+ flex-direction: column;
+ flex: 1;
+ justify-content: center;
+ align-items: center;
+ margin-top:10%;
+}
+
+.home-body > img{
+  object-fit: contain;
+  height: 100px;
+}
+
+.avtar {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+  }
