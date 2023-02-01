@@ -7,19 +7,17 @@ const Search2 = () => {
        <div className='search'>
           <div className='search-items2'>
               
-          
-
            <input className='myinput' type="text" />
 
-            <span class="material-symbols-sharp right-icon">
+            <span className="material-symbols-sharp right-icon">
                 mic
             </span>
 
-            <span class="material-symbols-rounded right-icon">
+            <span className="material-symbols-rounded right-icon">
                photo_camera
             </span>
 
-            <span class="material-symbols-outlined right-icon">
+            <span className="material-symbols-outlined right-icon">
             search
           </span>
       
@@ -29,4 +27,4 @@ const Search2 = () => {
   )
 }
 
-export default Search2
+export default Search2;

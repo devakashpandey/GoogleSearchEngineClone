@@ -13,11 +13,11 @@ function Home() {
                         <p>Gmail</p>
                         <p>Images</p>
 
-                        <span class="material-symbols-outlined app">
+                        <span className="material-symbols-outlined app">
                          apps
                         </span> 
 
-                        <span class="material-symbols-rounded avtar">
+                        <span className="material-symbols-rounded avtar">
                            account_circle
                        </span>  
                       </div>

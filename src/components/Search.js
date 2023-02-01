@@ -1,14 +1,23 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+// import { action } from '../reducer';
+import { useStateValue } from '../StateProvider';
 import "./Search.css";
 
 const Search = () => {
 
   let [input , setInput] = useState()
   let navigate = useNavigate()
+  // const [{}, dispatch] = useStateValue()
 
   let googleSearch = (event) =>{
       event.preventDefault()
+
+      // dispatch({
+      //   type: action.SET_SEARCH_TERM,
+      //   TERM: input
+      // })
+
       navigate("/search")
   }
 
@@ -17,17 +26,17 @@ const Search = () => {
        <div className='search'>
           <div className='search-items'>
               
-          <span class="material-symbols-outlined srch">
+          <span className="material-symbols-outlined srch">
             search
           </span>
 
            <input type="text" value={input} onChange={(e) => setInput(e.target.value)} />
 
-            <span class="material-symbols-sharp right-icon">
+            <span className="material-symbols-sharp right-icon">
                 mic
             </span>
             
-              <span class="material-symbols-rounded right-icon">
+              <span className="material-symbols-rounded right-icon">
                photo_camera
              </span>            
 
