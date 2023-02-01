@@ -11,7 +11,6 @@
   position: sticky;
   z-index: 999;
   top:0;
-  border-bottom: 1px solid grey;
   padding-bottom: 15px;
 }
 
@@ -19,8 +18,8 @@
  object-fit: contain;
  height: 50px;
  margin-top: 28px;
- margin-right: -70px;
- margin-left: -70px;
+ margin-right: -80px;
+ margin-left: -100px;
 }
 
 .search-header-body{
@@ -64,7 +63,10 @@
 }
 
 .search-results{
- padding-left: 20px;
+ padding-left: 25px;
+ max-width: 650px;
+ margin-left: 210px;
+ margin-bottom: 100px;
 }
 
 .result-count{
@@ -76,17 +78,22 @@
   margin: 40px 0px;
 }
 
+.result-img{
+  height: 30px;
+  width: 80px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
 .search-result > a{
   display: flex;
-  align-items: center;
   text-decoration: none;
 }
 
-.result-img{
-  height: 40px;
-  width: 100px;
+.result_link{
+  color: black;
 }
 
-.search-result > a > p{
-  margin-left: 10px;
+.result-title:hover{
+  text-decoration: underline;
 }

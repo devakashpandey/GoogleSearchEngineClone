@@ -22,8 +22,10 @@
 
 .srch{
    color: grey;
-   font-size: 23px;
+   font-size: 21px;
    font-weight: 500;
+   margin-top: 3px;
+   cursor: pointer;
 }
 
 .search-items{
@@ -35,8 +37,8 @@
   margin-top: 15px;
 }
 
-input{
-  width: 500px;
+.search-items > input{
+  width: 550px;
   margin-left: 10px;
   outline: none;
   border: none;
@@ -45,7 +47,7 @@ input{
 
 .right-icon{
    margin-left: 10px;
-    
+   cursor: pointer;
 }
 
 .search-btn{
@@ -53,7 +55,7 @@ input{
 }
 
 .lang{
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 .lang > p > a{

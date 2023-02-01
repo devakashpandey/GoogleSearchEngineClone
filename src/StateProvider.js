@@ -1,6 +1,6 @@
-import React, { createContext,  useReducer, useContext } from 'react'
+import React, { createContext, useContext, useReducer } from 'react'
 
-//1. we call createContext for crating a context --(which is like a store itself)
+//1. we create instance of context --(which is like a store itself)
 export const StateContext = createContext()
 
 // 2. create a function in which provider wrap the children and 
@@ -8,12 +8,11 @@ export const StateContext = createContext()
 //  reducer & initialstate which we created in reducer file
 
 export const StateProvider = ({reducer, initialState, children}) =>{
-    
-  <StateContext.Provider value={useReducer(reducer, initialState)}>
-      {children}
-  </StateContext.Provider>
-
+                      
+     <StateContext.Provider value={useReducer(reducer, initialState)}>
+        {children}
+     </StateContext.Provider>
 }
 
-//3. make a function which return useContext which has StateContext
+//3. make a function which return useContext which has StateContext (FOR PULLLING DATA)
 export const useStateValue = () => useContext(StateContext)

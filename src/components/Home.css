@@ -39,6 +39,7 @@ font-size: 18px;
 .home-body > img{
   object-fit: contain;
   height: 100px;
+  margin-bottom: 10px;
 }
 
 .avtar {

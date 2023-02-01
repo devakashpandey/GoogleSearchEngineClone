@@ -1,22 +1,15 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-// import { action } from '../reducer';
-import { useStateValue } from '../StateProvider';
 import "./Search.css";
 
 const Search = () => {
 
   let [input , setInput] = useState()
   let navigate = useNavigate()
-  // const [{}, dispatch] = useStateValue()
+
 
   let googleSearch = (event) =>{
       event.preventDefault()
-
-      // dispatch({
-      //   type: action.SET_SEARCH_TERM,
-      //   TERM: input
-      // })
 
       navigate("/search")
   }
